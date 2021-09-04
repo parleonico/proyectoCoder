@@ -1,0 +1,252 @@
+:root {
+  --w-orange: #ff5714ff;
+  --w-burgundy: #413330ff;
+  --w-yellow: #ffb800ff;
+  --w-teal: #558c8cff;
+  --w-pink: #ffa5abff;
+}
+* {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--w-burgundy);
+}
+
+#logoHeader {
+  width: 3vw;
+  display: flex;
+}
+
+.menu {
+  width: 100vw;
+  height: 4vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--w-orange);
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  margin: 0 0 1vw 0;
+  box-shadow: 0px 15px 10px 0px rgb(0 0 0 / 20%);
+  flex-direction: row;
+  overflow: hidden;
+}
+header {
+  font-size: 1.5vw;
+  color: var(--w-burgundy);
+}
+
+.menu_left {
+  width: 12vw;
+  height: 4vw;
+  display: flex;
+  align-items: center;
+  padding: 1vw;
+  justify-content: space-around;
+  justify-items: left;
+  font-weight: bold;
+}
+
+.menu_right {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  right: 2vw;
+  justify-content: space-around;
+  padding: 3vw;
+  justify-items: right;
+}
+main {
+  left: 0;
+}
+p {
+  font-size: 90%;
+}
+.block {
+  left: 0;
+  border: 0;
+  background-color: var(--w-teal);
+  width: 100vw;
+}
+.cover {
+  width: 100vw;
+  left: 0;
+  display: inline-block;
+
+  color: var(--w-orange);
+  top: 4vw;
+}
+.textOver {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 1vw 1vw 1.5vw;
+  font-size: 80%;
+}
+
+#coverPhoto {
+  width: 100vw;
+  left: 0;
+  margin: 0;
+}
+
+.contenido {
+  line-height: 1.5;
+  padding: 5vw;
+  color: var(--w-burgundy);
+}
+h2 {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vw;
+  margin: 2vw 0 1vw 1vw;
+}
+
+.formContacto_legend {
+  font-size: 140%;
+  font-weight: bold;
+}
+.formContacto {
+  display: inline-block;
+  margin: 0 0 2vw 5vw;
+  color: var(--w-burgundy);
+  font-size: 120%;
+  box-sizing: 160%;
+  width: 80vw;
+}
+input,
+select {
+  width: 60vw;
+  padding: 10px 15px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+input[type="submit"],
+input[type="reset"] {
+  background-color: var(--w-orange);
+  border: 1px --w-burgundy;
+  color: var(--w-burgundy);
+  padding: 1vw 1vw;
+  text-decoration: none;
+  margin: 1vw 1vw;
+  cursor: pointer;
+  width: 20vw;
+  font-size: 100%;
+  font-weight: bold;
+}
+textarea {
+  width: 60vw;
+  height: 20vw;
+  padding: 1vw 1vw;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: both;
+  font-size: 100%;
+}
+.radius {
+  display: inline-block;
+  width: auto !important;
+  padding: 2vw;
+}
+
+.grilla__nosotros {
+  display: grid;
+  grid-template-columns: 28% 38% 28%;
+  grid-template-rows: 4vw 20vw 4vw 20vw 4vw 20vw;
+  grid-template-areas:
+    "titulo1 titulo1 titulo1"
+    "foto1 articulo1 articulo1"
+    "titulo2 titulo2 titulo2"
+    "articulo2 articulo2 foto2"
+    "titulo3 titulo3 titulo3"
+    "articulo3 articulo3 articulo3";
+  column-gap: 2vw;
+  row-gap: 3vw;
+  align-items: center;
+  justify-items: center;
+  margin: 1vw;
+  justify-self: center;
+}
+.grilla__nosotros--titulo1 {
+  grid-area: titulo1;
+  justify-self: left;
+}
+.grilla__nosotros--foto1 {
+  grid-area: foto1;
+  height: 100%;
+}
+.grilla__nosotros--articulo1 {
+  grid-area: articulo1;
+  font-size: 1.5vw;
+  overflow: hidden;
+}
+.grilla__nosotros--titulo2 {
+  grid-area: titulo2;
+  justify-self: right;
+}
+.grilla__nosotros--foto2 {
+  grid-area: foto2;
+  width: 90%;
+}
+.grilla__nosotros--articulo2 {
+  grid-area: articulo2;
+  font-size: 1.5vw;
+  overflow: hidden;
+}
+.grilla__nosotros--titulo3 {
+  grid-area: titulo3;
+}
+.grilla__nosotros--articulo3 {
+  grid-area: articulo3;
+  font-size: 1.5vw;
+  overflow: hidden;
+}
+
+.footerGeneral {
+  background-color: var(--w-burgundy);
+  height: 12vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1vw;
+  width: 100%;
+}
+
+#logoFooter {
+  width: 3vw;
+}
+
+.footerLeft {
+  margin: 2vw;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  width: 30vw;
+}
+
+.footerLeft_item {
+  display: block;
+  color: var(--w-pink);
+}
+
+.footerRight {
+  right: 2vw;
+  top: 0;
+  width: 30vw;
+  justify-content: right;
+  right: 0;
+  text-align: right;
+  color: var(--w-pink);
+}
+
+.footerRight_title {
+  font-weight: bold;
+}
